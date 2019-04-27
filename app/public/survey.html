@@ -252,6 +252,7 @@
 
                       <button type="button" id="submit" class="btn btn-dark">Submit Your Answers</button>
                     <!-- <button type="reset" id="reset" onclick="resetAnswer()">Reset</button> -->
+                </form>
                     </form>
 
         <div id="results-modal" class="modal fade" role="dialog">
@@ -283,8 +284,12 @@
 $( "#submit" ).click(function() {
     event.preventDefault();
     tabulateAnswers();
+    $('input[type=radio]').attr('checked',false);
     return false;
 });
+
+
+// CLEAR THE FORM
 
 // To get an array of values from multiple checked checkboxes, use jQuery map/get functions:
 
@@ -324,6 +329,11 @@ function tabulateAnswers() {
 
         console.log(friendInfo);
 
+        // MATCHMAKING FUNCTION
+// WRITE A LOOP - COMPARES NEWFRIEND TOTAL AND COMPARES TO TOTALS OF FRIENDS IN THE DATABASE
+// TOTAL DIFFERENCE THEN LOOP THROUGH TOTAL DIFFERENCES ARRAY TO FIND THE CLOSEST MATCH
+
+
     $.ajax("/api/friends/", {
       type: "POST",
       data: friendInfo
@@ -331,7 +341,7 @@ function tabulateAnswers() {
         console.log(data);
     })
 
- 
+
 
 // else{
 //            console.log(friendData[len].name)
