@@ -30,24 +30,6 @@ module.exports = function(app) {
         friendData.push(newFriend);
         console.log("made it" + JSON.stringify(friendData))
         })
-  
-
-  //   if (tableData.length < 5) {
-  //     //assign a server!
-  //     req.body.server = randomRickAndMortyCharacter.rickAndMortyCharacter();
-  //     tableData.push(req.body);
-  //     res.json(req.body);
-  //   }
-  //   else {
-  //     waitListData.push(req.body);
-  //     res.json(false);
-  //   }
-  // });
-  
-    // ---------------------------------------------------------------------------
-    // I added this below code so you could clear out the table while working with the functionality.
-    // Don"t worry about it!
-  
 
   };
   
