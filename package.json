@@ -1,0 +1,29 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "matchmaking app",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eanderson111/friendfinder.git"
+  },
+  "keywords": [
+    "friends",
+    "matchmaking"
+  ],
+  "author": "eva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eanderson111/friendfinder/issues"
+  },
+  "homepage": "https://github.com/eanderson111/friendfinder#readme"
+}

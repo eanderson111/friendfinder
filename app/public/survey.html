@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Native Nomad</title>
+
+    <link rel="stylesheet" href="../public/assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+</head>
+
+<style>
+
+#wrapper {
+ margin-left: 2em;
+}
+
+#submit {
+    margin-top: 2em;
+}
+
+</style>
+<body>
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark static-top">
+            <div class="container">
+                <a class="navbar-brand" href="../public/home.html" rel="home">NÅTIVÉ ÑØMÀÐ</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                    <a href="#projects" class="nav-link">take the survey</a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="#contact" class="nav-link">contact</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </nav>
+            <div id="wrapper">
+                    <h1>Nomads, find your natives!</h1>
+                    <p>Take this questionnaire to get matched!</p>
+                              <div class="card-body">
+    
+            <form id="quiz">
+                <div class="form-group">
+                <!-- <form method="POST" role="form"> -->
+                <label for="friend-name">Name</label>
+                <input type="text" class="form-control" id="friend-name">
+              </div>
+
+                      <!-- Question 1 -->
+                      <h2>Which of the following best describes your travel style?</h2>
+                      <!-- Here are the choices for the first question. Each input tag must have the same name. For this question, the name is q1. -->
+                      <!-- The value is which answer the choice corresponds to. -->
+                      <label><input type="radio" name="q1" value="1">
+                        Cultural Explorer (focus on cultural heritage and landmarks)
+                      </label><br />
+                      <label><input type="radio" name="q1" value="2">
+                        Chiller (in it for the relaxation)
+                      </label><br />
+                      <label><input type="radio" name="q1" value="3">
+                        Partier (always down for a party)
+                      </label><br />
+                      <label><input type="radio" name="q1" value="4">
+                        Naturalist (explore the outdoors and natural resources)
+                      </label><br />
+                      <label><input type="radio" name="q1" value="5">
+                        Roads-less-travleed (seeking new, non-touristy places)
+                      </label><br />
+
+                  
+                      <!-- Question 2 -->
+                      <h2>How would you assess your travel habits?</h2>
+                      <!-- Here are the choices for the second question. Notice how each input tag has the same name (q2), but a different name than the previous question. -->
+                      <label><input type="radio" name="q2" value="1">
+                        I travel a little bit, mostly domestically
+                      </label><br />
+                      <label><input type="radio" name="q2" value="2">
+                        I've been out of the country a few times
+                      </label><br />
+                      <label><input type="radio" name="q2" value="3">
+                        I travel a far amount
+                      </label><br />
+                      <label><input type="radio" name="q2" value="4">
+                        I travel all the time
+                      </label><br />
+                      <label><input type="radio" name="q2" value="5">
+                       Other
+                      </label><br />
+
+                      <!-- Question 3 -->
+                      <h2>How would you describe your social preferences?</h2>
+                      <!-- Choices for the third question -->
+                      <label><input type="radio" name="q3" value="1">
+                        I love to meet new people
+                      </label><br />
+                      <label><input type="radio" name="q3" value="2">
+                        I tend to hang with my besties
+                      </label><br />
+                      <label><input type="radio" name="q3" value="3">
+                        I'm at my best one-on-one
+                      </label><br />
+                      <label><input type="radio" name="q3" value="4">
+                        Not super social
+                      </label><br />
+                      <label><input type="radio" name="q3" value="5">
+                        Other
+                      </label><br />
+                      
+                      <!-- Question 4 -->
+                      <h2>When it comes to eating and drinking out, what are you looking for?</h2>
+                      <!-- Choices for the fourth question -->
+                      <label><input type="radio" name="q4" value="1">
+                        Comfort food
+                      </label><br />
+                      <label><input type="radio" name="q4" value="2">
+                        Gastro & gourmet
+                      </label><br />
+                      <label><input type="radio" name="q4" value="3">
+                        Local go-tos
+                      </label><br />
+                      <label><input type="radio" name="q4" value="4">
+                        Street food
+                      </label><br />
+                      <label><input type="radio" name="q4" value="5">
+                        Good cockatils or wine
+                      </label><br />
+
+                    <!-- Question 5 -->
+                    <h2>What kind of music are you into?</h2>
+                    <!-- Choices for the fourth question -->
+                    <label><input type="radio" name="q5" value="1">
+                        Singer/songwriter
+                    </label><br />
+                    <label><input type="radio" name="q5" value="2">
+                        Electronic/dance
+                    </label><br />
+                    <label><input type="radio" name="q5" value="3">
+                        Rock/alternative
+                    </label><br />
+                    <label><input type="radio" name="q5" value="4">
+                        Classical or orchestral
+                    </label><br />
+                    <label><input type="radio" name="q5" value="5">
+                        Other
+                    </label><br />
+
+                    <!-- Question 6 -->
+                    <h2>What art style best fits your tastes?</h2>
+                    <!-- Choices for the fourth question -->
+                    <label><input type="radio" name="q6" value="1">
+                        Modern/contemporary
+                    </label><br />
+                    <label><input type="radio" name="q6" value="2">
+                        Traditional/historical
+                    </label><br />
+                    <label><input type="radio" name="q6" value="3">
+                        Street/experimental
+                    </label><br />
+                    <label><input type="radio" name="q6" value="4">
+                        Anything goes
+                    </label><br />
+                    <label><input type="radio" name="q6" value="5">
+                        Not that into art
+                    </label><br />
+
+
+                    <!-- Question 7 -->
+                    <h2>What are your political views?</h2>
+                    <!-- Choices for the fourth question -->
+                    <label><input type="radio" name="q7" value="1">
+                        Liberal
+                    </label><br />
+                    <label><input type="radio" name="q7" value="2">
+                        Conservative
+                    </label><br />
+                    <label><input type="radio" name="q7" value="3">
+                        Progressive
+                    </label><br />
+                    <label><input type="radio" name="q7" value="4">
+                        Moderate/independent
+                    </label><br />
+                    <label><input type="radio" name="q7" value="5">
+                        No preference
+                    </label><br />
+                
+                    <!-- Question 8 -->
+                    <h2>Which of the following best describes your current relationship status?</h2>
+                    <!-- Choices for the fourth question -->
+                    <label><input type="radio" name="q8" value="1">
+                        In a relationship
+                    </label><br />
+                    <label><input type="radio" name="q8" value="2">
+                        Single
+                    </label><br />
+                    <label><input type="radio" name="q8" value="3">
+                        Married
+                    </label><br />
+                    <label><input type="radio" name="q8" value="4">
+                        It's complicated
+                    </label><br />
+                    <label><input type="radio" name="q8" value="5">
+                        None of your business
+                    </label><br />         
+
+
+                    <!-- Question 9 -->
+                    <h2>How old are you?</h2>
+                    <!-- Choices for the fourth question -->
+                    <label><input type="radio" name="q9" value="1">
+                        18-2
+                    </label><br />
+                    <label><input type="radio" name="q9" value="2">
+                        29-38
+                    </label><br />
+                    <label><input type="radio" name="q9" value="3">
+                        39-48
+                    </label><br />
+                    <label><input type="radio" name="q9" value="4">
+                        49-58
+                    </label><br />
+                    <label><input type="radio" name="q9" value="5">
+                        58+
+                    </label><br />     
+                    
+                    <!-- Question 10 -->
+                    <h2>What's your ethnicity?</h2>
+                    <!-- Choices for the fourth question -->
+                    <label><input type="radio" name="q10" value="1">
+                        Asian or Pacific Islander
+                    </label><br />
+                    <label><input type="radio" name="q10" value="2">
+                        Black or African American
+                    </label><br />
+                    <label><input type="radio" name="q10" value="3">
+                        Hispanic or Latino
+                    </label><br />
+                    <label><input required type ="radio" name="q10" value="4">
+                        White or Caucasian
+                    </label><br />
+                    <label><input type="radio" name="q10" value="5">
+                        Other
+                    </label><br />  
+
+                      <button type="button" id="submit" class="btn btn-dark">Submit Your Answers</button>
+                    <!-- <button type="reset" id="reset" onclick="resetAnswer()">Reset</button> -->
+                    </form>
+
+        <div id="results-modal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <h2 class="modal-title"><strong>Best Match</strong></h2>
+                    </div>
+                    <div class="modal-body">
+                        <h2 id="match-name"></h2>
+                        <!-- <img id="match-img" src="https://picsum.photos/200/300
+                https://picsum.photos/200/300
+                " alt=""> -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+                
+                </div>
+                </div>
+                 
+  <!-- JavaScript -->
+<script type="text/javascript">
+
+$( "#submit" ).click(function() {
+    event.preventDefault();
+    tabulateAnswers();
+    return false;
+});
+
+// To get an array of values from multiple checked checkboxes, use jQuery map/get functions:
+
+// $('input[type=checkbox]:checked').map(function(_, el) {
+//     return $(el).val();
+// }).get();
+
+var allScores = [];
+
+function tabulateAnswers() {
+    // get a list of the radio inputs on the page
+    var friendScore = '';
+    var name = $("#friend-name").val().trim();
+    var choices = document.getElementsByTagName('input');
+    // loop through all the radio inputs
+    for (i=0; i<choices.length; i++) {
+      // if the radio is checked..
+      if (choices[i].checked) {
+          friendScore = parseInt(choices[i].value);
+          allScores.push(friendScore)
+      }
+    } 
+
+        var totalFriendScore = 0;
+        $.each(allScores,function() {
+        totalFriendScore += this;
+        console.log(totalFriendScore);
+        return totalFriendScore;
+        });
+
+
+    var friendInfo = {
+            name: name,
+            scores: allScores,
+            total: totalFriendScore,
+        }
+
+        console.log(friendInfo);
+
+    $.ajax("/api/friends/", {
+      type: "POST",
+      data: friendInfo
+    }).then(function(data){
+        console.log(data);
+    })
+
+ 
+
+// else{
+//            console.log(friendData[len].name)
+//            console.log("You dont have any Match's")
+
+//            $("#match-name").text("Sorry " + friendInfo.name +  " there are no matches");
+//              $("#match-img").attr("src", "https://picsum.photos/id/237/200/300
+// https://picsum.photos/id/237/200/300
+// ");
+
+//          // Show the modal with the best match
+//               $("#results-modal").modal("toggle");
+//          }
+        
+//     $.post("/api/friends", friendInfo,
+//       function(data) {
+
+//         // If a table is available... tell user they have booked.
+//         if (data) {
+//           alert("Friend added");
+//         }
+
+//         // If a table isn't available... tell user they on the waiting list.
+//         else {
+//           alert("Sorry no friend :(");
+//         }
+// })
+}
+
+// Send the POST request.
+//     $.ajax("/api/friends/", {
+//       type: "POST",
+//       data: friendInfo
+//     }).then(function(data){
+//         console.log(data);
+//     })
+// }
+
+// <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js">
+//     console.log('hi');
+//     $('#button').on('click', function(event){
+//       event.preventDefault();
+//       var item = $('#item').val();
+//       $.post('/add-item',{item: item}, function(res){
+//         console.log('success', res);
+//       })
+//     })
+
+// // Routes
+// app.get("/:operation/:firstNum?/:secondNum?", function(req, res) {
+
+// // Parameters are received from the URL
+// var operation = req.params.operation;
+// var result;
+
+
+// if (operation.indexOf(" ")){
+//    var firstNum = parseInt(operation.split(" ")[1]);
+//    var secondNum = parseInt(operation.split(" ")[2]);
+// }
+// else{
+//   // Parameters are converted to integers
+//   var firstNum = parseInt(req.params.firstNum);
+//   var secondNum = parseInt(req.params.secondNum);
+  
+// }
+// // Switch statement chooses operation based on the operation parameter.
+// switch (operation) {
+// case "add":
+// case "+": // Bonus.  Example:  http://localhost:3002/+/6/4 --> 10
+//   result = firstNum + secondNum;
+//   break;
+// case "subtract":
+// case "-": // Bonus.  Example:  http://localhost:3002/-/6/4 --> 2
+//   result = firstNum - secondNum;
+//   break;
+// case "multiply":
+// case "*": // Bonus.  Example:  http://localhost:3002/*/3/4 --> 12
+//   result = firstNum * secondNum;
+//   break;
+// case "divide":
+// case "/": // Bonus.  This char has to be escaped in the url since slashes separate params
+//   // Example:  http://localhost:3002/2%f/14/2 --> 7
+//   result = firstNum / secondNum;
+//   break;
+// default:
+//   result =
+//       "Sorry! The only valid operations are add, subtract, multiply, and divide.";
+// }
+
+// // We return the result back to the user in the form of a string
+// res.send(result.toString());
+
+// });
+
+
+</script>
+
+</body>
+</html>
+
